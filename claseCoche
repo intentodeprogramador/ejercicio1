@@ -1,0 +1,26 @@
+package com.practicajava;
+
+
+public class Practicajava {
+
+    public static void main(String[] args) {
+               
+        Coche miCoche = new Coche();
+        
+        System.out.println("Cantidad de puertas del coche = "+miCoche.puertas);
+        
+        System.out.println("Si le agregamos una puerta tiene por total = "+Coche.aumentarPuertas(miCoche.puertas));
+        
+    }
+
+
+public class Coche {
+    int puertas = 3;
+    
+       
+ public static int aumentarPuertas(int puertas){
+        return puertas+1;
+    }   
+    
+  
+}
